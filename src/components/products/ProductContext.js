@@ -17,15 +17,13 @@ export const ProductContextProvider = (props) => {
   const onGetProducts = async () => {
     try {
       const result = await getProducts();
-      console.log(result);
       if (result.error == false) {
-        setProducts(JSON.stringify(result.data));
-        
+        setProducts(result.data);
       } else {
         console.log("onGetProducts error", e);
       }
     } catch (e) {
-      console.log("onGetProducts error" , JSON.stringify(e));
+      console.log("onGetProducts error", e);
     }
     return null;
   };

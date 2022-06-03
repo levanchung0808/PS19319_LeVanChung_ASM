@@ -1,51 +1,63 @@
 import { StyleSheet } from "react-native";
+import { Dimensions } from "react-native";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
+
+const padding = 9;
+
+const widthItem = windowWidth / 2 - padding * 4;
+
 const styles = StyleSheet.create({
   //item
-  txtPrice:{
-    color: 'white',
-    fontWeight: '500',
+  txtPrice: {
+    color: "white",
+    fontWeight: "500",
     fontSize: 15,
-    paddingLeft: 5,
-  },  
-  ic_hinhtron:{
-    position: 'absolute',
+    paddingLeft: 10,
+  },
+  ic_hinhtron: {
+    position: "absolute",
     right: -30,
     top: -20,
   },
-  ic_heart:{
-    position: 'absolute',
+  ic_heart: {
+    position: "absolute",
     right: -25,
-    top: -13,
+    top: -12.5,
   },
-  ic_favorites:{
-    position: 'relative'
+  ic_favorites: {
+    position: "relative",
   },
-  txtNameProduct:{
-    color: 'white',
-    fontWeight: '500',
+  txtNameProduct: {
+    color: "white",
+    fontWeight: "500",
     fontSize: 15,
-    paddingLeft: 5,
+    paddingStart: 10,
   },
-  lbContainer:{
-    position: 'absolute',
+  lbContainer: {
+    position: "absolute",
     left: 0,
     top: 120,
   },
-  itemBackground:{
+  itemBackground: {
     marginTop: 50,
   },
-  imgCaffe:{
-    position: 'absolute',
-    left: 10,
+  imgCaffe: {
+    position: "absolute",
+    right: -10,
     top: -50,
+    width: 162,
+    height: 162,
   },
   txtRate: {
     position: "absolute",
     left: 25,
-    top: 20,
-    color: '#FFFFFF',
-    fontWeight: '400',
+    top: 18,
+    color: "#FFFFFF",
+    fontWeight: "400",
     fontSize: 18,
+    marginStart:4
   },
   icStar: {
     position: "absolute",
@@ -53,19 +65,22 @@ const styles = StyleSheet.create({
     right: "89.29%",
     top: "15%",
     bottom: "66.21%",
+    width: 11.76,
+    height: 11.22,
   },
   itemContainer: {
-    width: "47%",
-    height: 170,
-    marginTop: 70,
-    backgroundColor: '#225125',
+    width: widthItem,
+    height: widthItem,
+    marginHorizontal: padding,
+    marginTop: padding * 8,
+    backgroundColor: "#225125",
     position: "relative",
     borderRadius: 20,
   },
-  itemContainerBig:{
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around'
+  itemContainerBig: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
   },
 
   //menu

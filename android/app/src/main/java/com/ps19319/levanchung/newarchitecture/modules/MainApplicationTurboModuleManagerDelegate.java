@@ -1,4 +1,4 @@
-package com.ps19319levanchungasm.newarchitecture.modules;
+package com.ps19319.levanchung.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

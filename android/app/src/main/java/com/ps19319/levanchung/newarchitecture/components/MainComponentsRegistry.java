@@ -1,4 +1,4 @@
-package com.ps19319levanchungasm.newarchitecture.components;
+package com.ps19319.levanchung.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

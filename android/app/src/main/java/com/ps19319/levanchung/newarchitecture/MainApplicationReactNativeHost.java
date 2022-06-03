@@ -1,4 +1,4 @@
-package com.ps19319levanchungasm.newarchitecture;
+package com.ps19319.levanchung.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.ps19319levanchungasm.BuildConfig;
-import com.ps19319levanchungasm.newarchitecture.components.MainComponentsRegistry;
-import com.ps19319levanchungasm.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.ps19319.levanchung.BuildConfig;
+import com.ps19319.levanchung.newarchitecture.components.MainComponentsRegistry;
+import com.ps19319.levanchung.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

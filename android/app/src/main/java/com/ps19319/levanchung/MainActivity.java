@@ -1,4 +1,4 @@
-package com.ps19319levanchungasm;
+package com.ps19319.levanchung;
 
 import android.os.Build;
 import android.os.Bundle;
